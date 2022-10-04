@@ -18,7 +18,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t akshaytr123 .'
+				sh 'docker build -t akshaytr123/mysql:latest .'
 			}
 		}
 
@@ -32,7 +32,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push akshaytr123'
+				sh 'docker push akshaytr123/mysql:latest'
 			}
 		}
 	}
