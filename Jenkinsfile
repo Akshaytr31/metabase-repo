@@ -11,7 +11,7 @@ pipeline{
 	    stage('gitclone') {
 
 			steps {
-				git 'https://github.com/shazforiot/nodeapp_test.git'
+				git 'https://github.com/Akshaytr31/metabase-repo.git'
 			}
 		}
 
